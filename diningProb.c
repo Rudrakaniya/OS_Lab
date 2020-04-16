@@ -6,9 +6,23 @@
 #include <unistd.h>
 #definde endl "\n"
 
-int32_t main(){
+//semaphore declaration
+sem_t MUTEX;
+sem_t chopChopSquare[5];  
 
-  /* Code will be here */
+//three states of philosophers
+enum s{
+ EATING , HUNGRY , THINKING
+};
+
+void CheckAvailability(int PhilNum);
+void PickUpChopSticks(int PhilNum);
+void PutChopsticksDown(int PhilNum);
+void* magic(void* num);
+
+int32_t main(){
+  pthread_t Thread[5];
+  
 
 return 0;
 }
