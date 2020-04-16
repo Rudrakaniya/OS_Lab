@@ -1,10 +1,20 @@
-//break_the_bond 
+//break_the_bond
 //jatt_james_bond
-#include<bits/stdc++.h>
-using namespace std;
-int32_t main(){
+#include<stdio.h>
+#include<unistd.h>
+#include<fcntl.h>
+#include<errno.h>
+int main()
+{
+    int len, fd;
+    char str[30];
+    fd = open("testFile.txt", O_RDONLY, 0777);
+    if (fd == -1)
+        perror("Error:");
 
-  /*Code goes here*/
-  
-return 0;
+    lseek(fd, -11, SEEK_END);
+    len = read(fd, str, 10);
+    write(1, str, len);
+    
+    return 0;
 }
