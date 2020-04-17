@@ -26,19 +26,19 @@ struct Philosopher{
 //giving the values to the struct
 struct Philosopher P[5]={
     {
-        "Professor A",0
+        "Philosopher A",0
     },
     {
-        "Professor B",1
+        "Philosopher B",1
     },
     {
-        "Professor C",2
+        "Philosopher C",2
     },
     {
-        "Professor D",3
+        "Philosopher D",3
     },
     {
-        "Professor E",4
+        "Philosopher E",4
     }
 };
 

@@ -49,7 +49,7 @@ int32_t main() {
     sem_init( & sema, 0, 1);
     int sg;
     sem_getvalue(&sema, &sg);
-    cout << "Corrent value of the semaphore = " << sg<<endl;
+    cout << "Current value of the semaphore = " << sg<<endl;
     
     int i = 3;
     while (i--)
